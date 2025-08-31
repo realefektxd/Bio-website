@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RealEfekt - Biografia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="console-screen" id="consoleScreen">
+        <div class="console-content">
+            <div class="typing-text" id="typingText"></div>
+            <div class="continue-text" id="continueText">PRESS LPM TO CONTINUE</div>
+        </div>
+    </div>
+
+    <div class="main-content" id="mainContent" style="display: none;">
+        <div class="stars"></div>
+        <div class="shooting-star"></div>
+        <div class="shooting-star"></div>
+        <div class="shooting-star"></div>
+        <div class="shooting-star"></div>
+        <div class="shooting-star"></div>
+        
+        <div class="bio-panel">
+            <div class="avatar-container">
+                <img src="avatar.png" alt="RealEfekt Avatar" class="avatar">
+            </div>
+            
+            <h1 class="name">realefekt</h1>
+            
+            <div class="social-buttons">
+                <a href="http://store.xz-mafia.space/" class="social-btn" target="_blank">
+                    XENZ STORE
+                </a>
+                <a href="https://youtube.com/@realefekt" class="social-btn" target="_blank">
+                    YouTube
+                </a>
+            </div>
+            
+            <div class="footer">
+                <span class="handle">@realefekt</span>
+            </div>
+        </div>
+
+        <div class="music-controls-top">
+            <div class="music-info">
+                <img src="fukaj.png" alt="Fukaj" class="music-icon">
+                <span class="music-title">FUKAJ - NIE CHCE WRACAĆ</span>
+            </div>
+            <div class="music-controls-buttons">
+                <button class="play-pause-btn" id="playPauseBtn">
+                    <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M8 5v14l11-7z"/>
+                    </svg>
+                    <svg class="pause-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>
+                    </svg>
+                </button>
+                
+                <div class="volume-control">
+                    <input type="range" class="volume-slider" id="volumeSlider" min="0" max="100" value="15">
+                </div>
+            </div>
+        </div>
+
+        <div class="music-controls" style="display: none;">
+            <button class="play-pause-btn" id="playPauseBtn">
+                <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M8 5v14l11-7z"/>
+                </svg>
+                <svg class="pause-icon" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>
+                </svg>
+            </button>
+            
+            <div class="volume-control">
+                <input type="range" class="volume-slider" id="volumeSlider" min="0" max="100" value="15">
+            </div>
+        </div>
+
+        <audio id="backgroundMusic" loop>
+            <source src="music.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
